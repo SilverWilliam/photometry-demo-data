@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "datasets": [
+    {
+      "subject": "WS28",
+      "session": "WS28/2026-02-17-140841",
+      "label": "WS28 NAc",
+      "directory": "data/WS28/2026-02-17-140841/",
+      "ppd": {
+        "path": "WS28_NAc-2026-02-17-140838.ppd",
+        "bytes": 5636719,
+        "sha256": "9b908377640045140a06d46d156858e6c6cded45677e9ad95952af7a08b06b51"
+      },
+      "trials": {
+        "path": "trials.htsv",
+        "bytes": 56591,
+        "sha256": "a059d7d77b556112db2729fa164c250379b43e00d4e894705bdfec66b412b635"
+      },
+      "times": {
+        "path": "dlight.times.npy",
+        "bytes": 2818328,
+        "sha256": "fd439f47f145294a25feca90b87c753199eb67adb645a95de6db912db467112f"
+      }
+    }
+  ]
+}
