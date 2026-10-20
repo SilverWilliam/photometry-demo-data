@@ -21,6 +21,98 @@
         "bytes": 2818328,
         "sha256": "fd439f47f145294a25feca90b87c753199eb67adb645a95de6db912db467112f"
       }
+    },
+    {
+      "subject": "WS04",
+      "session": "WS04/2024-05-31-155317",
+      "label": "WS04 NAc 5-HT",
+      "region": "NAc",
+      "neuromodulator": "5-HT",
+      "directory": "data/WS04/2024-05-31-155317/",
+      "ppd": {
+        "path": "WS04_NAc-2024-05-31-155314.ppd",
+        "bytes": 2848372,
+        "sha256": "b4ab6648ee65f0e656fecb68346bd58db9daccf579516dd554d2850fcc0589f8"
+      },
+      "trials": {
+        "path": "trials.htsv",
+        "bytes": 35579,
+        "sha256": "89367abfcfff32f88d4aa0e633fb5b92ae938b5f193e1f63c3d2151452faa6c1"
+      },
+      "times": {
+        "path": "dlight.times.npy",
+        "bytes": 2848208,
+        "sha256": "f3ad76cbe915670336731737631fa2ecd46490e704396ab7e95d99081219cd90"
+      }
+    },
+    {
+      "subject": "WS28",
+      "session": "WS28/2026-02-25-103019",
+      "label": "WS28 mFC 5-HT",
+      "region": "mFC",
+      "neuromodulator": "5-HT",
+      "directory": "data/WS28/2026-02-25-103019/",
+      "ppd": {
+        "path": "WS28_mFC-2026-02-25-103016.ppd",
+        "bytes": 5651551,
+        "sha256": "18d00630c98efe8da7e7fc43574d940ff862cfe0d11ebbeaf1ceec48cef19fbf"
+      },
+      "trials": {
+        "path": "trials.htsv",
+        "bytes": 39601,
+        "sha256": "a3c0bfb12267689dd4f42ed5855fe171aac41dffd8336d4c89e7d11ca20ef500"
+      },
+      "times": {
+        "path": "dlight.times.npy",
+        "bytes": 2825744,
+        "sha256": "67aca247e626151e282eab42366c4e36dc38b0470cf3178b8b0dc7a3e9d0353f"
+      }
+    },
+    {
+      "subject": "WS16",
+      "session": "WS16/2025-05-07-161658",
+      "label": "WS16 NAc DA",
+      "region": "NAc",
+      "neuromodulator": "DA",
+      "directory": "data/WS16/2025-05-07-161658/",
+      "ppd": {
+        "path": "WS16_NAc-2025-05-07-161655.ppd",
+        "bytes": 5629975,
+        "sha256": "844369121b9c58cc8a4885f350e51332b27ffc4edb7caa5fd6517494c52186f2"
+      },
+      "trials": {
+        "path": "trials.htsv",
+        "bytes": 28200,
+        "sha256": "21445a7c720e32bd249898883d519a197c802d717e93c8854e7a47e9f6c7caac"
+      },
+      "times": {
+        "path": "dlight.times.npy",
+        "bytes": 2814956,
+        "sha256": "83981250415ca992dfa501af6c08dc9693e4adcdcb5d2ec649e9d5b1cf020eb1"
+      }
+    },
+    {
+      "subject": "WS16",
+      "session": "WS16/2025-04-30-140336",
+      "label": "WS16 mFC DA",
+      "region": "mFC",
+      "neuromodulator": "DA",
+      "directory": "data/WS16/2025-04-30-140336/",
+      "ppd": {
+        "path": "WS16_mFC-2025-04-30-140329.ppd",
+        "bytes": 5655271,
+        "sha256": "6437b3d031fb223f808bea1523976b38e9c2673d455bc28354ead6b3ce39495b"
+      },
+      "trials": {
+        "path": "trials.htsv",
+        "bytes": 48016,
+        "sha256": "5d22a8c8c9e170d7ec48bd9790f2f05e5646ed29a2d26adbf41437c44744e4ec"
+      },
+      "times": {
+        "path": "dlight.times.npy",
+        "bytes": 2827604,
+        "sha256": "01cfbaf36f86cc74e20e941070553f7f9bbf2976056347644d3ee587fa74cc5b"
+      }
     }
   ]
 }
