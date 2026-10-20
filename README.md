@@ -1,23 +1,36 @@
 # Photometry demo data
 
-Public example data for William Silver's photometry preprocessing dynamics
-explorer. Publication of this WS28 bundle was approved by the data owner.
+Public example data for William Silver's Neuromodulators photometry preprocessing demo.
+Publication of these example sessions is approved by the data owner.
 
-## WS28 — 2026-02-17-140841
+Each `data/SUBJECT/YYYY-MM-DD-HHMMSS/` directory contains a matched bundle:
 
-`data/WS28/2026-02-17-140841/` contains a matched recording bundle:
+- A pyPhotometry `.ppd` recording, copied byte-for-byte.
+- `trials.htsv`: the existing processed behavioural trials derived from pyControl.
+- `dlight.times.npy`: the existing per-sample photometry timestamps aligned to the
+  same pyControl session. These are copied intact, without recomputing synchronisation.
 
-- `WS28_NAc-2026-02-17-140838.ppd`: pyPhotometry recording (NAc).
-- `trials.htsv`: processed behavioural trials derived from pyControl.
-- `dlight.times.npy`: photometry timestamps aligned to that behavioural session.
+## Default examples
 
-The three-second difference in recording filenames is retained from the original
-acquisition; pairing is explicit, not inferred by matching filenames. Raw
-pyControl TSV is not included: the current explorer consumes the processed pair.
+| Neuromodulator | Region | Subject | Behavioural session | Recording |
+| --- | --- | --- | --- | --- |
+| 5-HT | NAc | WS04 | 2024-05-31-155317 | `WS04_NAc-2024-05-31-155314.ppd` |
+| 5-HT | mFC | WS28 | 2026-02-25-103019 | `WS28_mFC-2026-02-25-103016.ppd` |
+| DA | NAc | WS16 | 2025-05-07-161658 | `WS16_NAc-2025-05-07-161655.ppd` |
+| DA | mFC | WS16 | 2025-04-30-140336 | `WS16_mFC-2025-04-30-140329.ppd` |
+
+The earlier `data/WS28/2026-02-17-140841/` NAc/5-HT example remains available unchanged.
+
+Recording filenames retain their original acquisition timestamps, which can differ
+by a few seconds from the behavioural session timestamps. Pairing is explicit in
+`manifest.json`; timestamps or trials must never be mixed between sessions.
 The manifest records exact byte counts and SHA-256 hashes. Consumers should pin
-a Git commit, verify all three files, then process them together. Do not mix
-timestamps or trials from a different session.
+an immutable Git commit and verify all three files before processing the bundle.
 
-This repository contains data only: no application deployment, credentials,
-local paths, training outputs or workflow. No broad reuse licence is asserted
-here; contact the owner about reuse beyond this demonstration.
+Raw pyControl TSVs are not needed by the current demo: it consumes the matching
+processed behavioural trials and aligned timestamps. Local raw data files were
+read only during preparation and were not edited.
+
+This repository contains data only: no application deployment, credentials, local
+paths, training outputs or workflow. No broad reuse licence is asserted here;
+contact the owner about reuse beyond this demonstration.
